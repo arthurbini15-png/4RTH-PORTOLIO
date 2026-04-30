@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4RTH//PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="image.png">
+</head>
+<body>
+
+  <!-- SCAN LINE OVERLAY -->
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <!-- CURSOR CUSTOM -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+       <link rel="icon" href="image.png">
+      <span class="glitch" data-text="SYS://USER">SYS://4RTH</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link">[ACCUEIL]</a></li>
+      <li><a href="#about" class="nav-link">[A_PROPOS]</a></li>
+      <li><a href="#skills" class="nav-link">[SKILLS]</a></li>
+      <li><a href="#projects" class="nav-link">[PROJETS]</a></li>
+      <li><a href="#contact" class="nav-link">[CONTACT]</a></li>
+      <li><a href="#cv" class="nav-link">[CV]</div></a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="mono">ONLINE</span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="matrixCanvas"></canvas>
+    </div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag mono">&gt; INITIALISATION DU SYSTÈME...</div>
+      <h1 class="hero-name">
+        <span class="line1 glitch" data-text="VOTRE">ARTHUR</span>
+        <span class="line2 glitch" data-text="NOM">BINI</span>
+      </h1>
+      <div class="hero-title">
+        <span class="typing-text" id="typingText"></span>
+        <span class="cursor-blink">▮</span>
+      </div>
+      <p class="hero-desc mono">
+        // Développeur Full-Stack &amp; Designer Cyberpunk<br/>
+        // Basé dans le cyberespace — disponible partout
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <span class="btn-glitch">VOIR PROJETS</span>
+          <span class="btn-icon">▶</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span>CONTACT</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="42">0</span>
+          <span class="stat-label mono">PROJETS</span>
+        </div>
+        <div class="stat-divider">//</div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label mono">ANS_EXP</span>
+        </div>
+        <div class="stat-divider">//</div>
+        <div class="stat">
+          <span class="stat-num" data-target="99">0</span>
+          <span class="stat-label mono">% CAFÉ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <div class="avatar-frame">
+        <div class="avatar-inner">
+          <div class="avatar-placeholder">
+             <img src="photo.jpg" alt="Ma photo" class="avatar-img" width="249">
+          </div>
+          </div>
+          <div class="avatar-corner tl"></div>
+          <div class="avatar-corner tr"></div>
+          <div class="avatar-corner bl"></div>
+          <div class="avatar-corner br"></div>
+        </div>
+        <div class="avatar-data mono">
+          <div>&gt; SCAN: COMPLET</div>
+          <div>&gt; ID: #7F3A9C</div>
+          <div>&gt; NIVEAU: EXPERT</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="mono">SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <div class="section-tag mono">&lt;SECTION_02&gt;</div>
+      <h2 class="section-title glitch" data-text="À PROPOS">À PROPOS</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title mono">user@cyber:~$</span>
+        </div>
+        <div class="terminal-body mono">
+          <p><span class="cmd-prefix">&gt;</span> whoami</p>
+          <p class="output">Développeur passionné par l'innovation tech</p>
+          <p><span class="cmd-prefix">&gt;</span> cat passion.txt</p>
+          <p class="output">Code | Design | Futurisme | IA</p>
+          <p><span class="cmd-prefix">&gt;</span> ls ./experience/</p>
+          <p class="output">frontend/ backend/ mobile/ devops/</p>
+          <p><span class="cmd-prefix">&gt;</span> echo $MISSION</p>
+          <p class="output">Créer des expériences numériques mémorables</p>
+          <p class="cmd-prefix blink-cursor">▮</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="about-p">
+          Je suis un Etudiant <span class="highlight">développeur full-stack</span> avec une passion pour créer des interfaces qui défient les conventions. Mon code est mon art, chaque projet est une nouvelle réalité à construire.
+        </p>
+        <p class="about-p">
+          Armé d'Ambitions et<span class="highlight">d'Expérience</span>, je veux transforme des idées complexes en expériences digitales élégantes et performantes.
+        </p>
+        <div class="about-badges">
+          <span class="badge">React</span>
+          <span class="badge">Node.js</span>
+          <span class="badge">Python</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">AWS</span>
+          <span class="badge">Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <div class="section-tag mono">&lt;SECTION_03&gt;</div>
+      <h2 class="section-title glitch" data-text="COMPÉTENCES">COMPÉTENCES A ACQUERIR</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-delay="0">
+        <div class="skill-icon">⚡</div>
+        <h3 class="skill-name">FRONTEND</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="92">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct mono">92%</span>
+        </div>
+        <p class="skill-desc mono">React · Vue · HTML · CSS · GSAP</p>
+      </div>
+      <div class="skill-card" data-delay="100">
+        <div class="skill-icon">🔧</div>
+        <h3 class="skill-name">BACKEND</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="85">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct mono">85%</span>
+        </div>
+        <p class="skill-desc mono">Node.js · Python · REST · GraphQL</p>
+      </div>
+      <div class="skill-card" data-delay="200">
+        <div class="skill-icon">🗄️</div>
+        <h3 class="skill-name">DATABASE</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="78">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct mono">78%</span>
+        </div>
+        <p class="skill-desc mono">MongoDB · PostgreSQL · Redis</p>
+      </div>
+      <div class="skill-card" data-delay="300">
+        <div class="skill-icon">☁️</div>
+        <h3 class="skill-name">DEVOPS</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="70">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct mono">70%</span>
+        </div>
+        <p class="skill-desc mono">Docker · AWS · CI/CD · Linux</p>
+      </div>
+      <div class="skill-card" data-delay="400">
+        <div class="skill-icon">🎨</div>
+        <h3 class="skill-name">DESIGN</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="88">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct mono">88%</span>
+        </div>
+        <p class="skill-desc mono">Figma · UI/UX · Motion Design</p>
+      </div>
+      <div class="skill-card" data-delay="500">
+        <div class="skill-icon">🤖</div>
+        <h3 class="skill-name">IA / ML</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-width="65">
+            <div class="skill-fill"></div>
+          </div>
+          <span class="skill-pct mono">65%</span>
+        </div>
+        <p class="skill-desc mono">TensorFlow · OpenAI · LangChain</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <div class="section-tag mono">&lt;SECTION_04&gt;</div>
+      <h2 class="section-title glitch" data-text="PROJETS">PROJETS FUTURES</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-img">
+          <div class="project-placeholder">
+            <span>◈</span>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="project-link">VOIR →</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">AI</span>
+          </div>
+          <h3 class="project-title">NEURAL_DASHBOARD</h3>
+          <p class="project-desc mono">Tableau de bord IA temps réel avec visualisations de données et prédictions machine learning.</p>
+          <div class="project-links">
+            <a href="#" class="plink">GitHub ↗</a>
+            <a href="#" class="plink">Live ↗</a>
+          </div>
+        </div>
+        <div class="project-num">01</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-placeholder"><span>◇</span></div>
+          <div class="project-overlay"><a href="#" class="project-link">VOIR →</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Firebase</span>
+          </div>
+          <h3 class="project-title">CRYPTO_TRACKER</h3>
+          <p class="project-desc mono">App de suivi crypto avec alertes en temps réel.</p>
+          <div class="project-links">
+            <a href="#" class="plink">GitHub ↗</a>
+            <a href="#" class="plink">Live ↗</a>
+          </div>
+        </div>
+        <div class="project-num">02</div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-placeholder"><span>◆</span></div>
+          <div class="project-overlay"><a href="#" class="project-link">VOIR →</a></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+          </div>
+          <h3 class="project-title">CYBER_API</h3>
+          <p class="project-desc mono">API REST ultra-performante avec auth JWT et rate limiting.</p>
+          <div class="project-links">
+            <a href="#" class="plink">GitHub ↗</a>
+            <a href="#" class="plink">Live ↗</a>
+          </div>
+        </div>
+        <div class="project-num">03</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <div class="section-tag mono">&lt;SECTION_05&gt;</div>
+      <h2 class="section-title glitch" data-text="CONTACT">CONTACT</h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p class="contact-intro">
+          Tu as une mission ? Une idée folle ?<br/>
+          <span class="highlight">Connectons-nous.</span>
+        </p>
+        <div class="contact-links">
+          <a href="mailto:votre@email.com" class="clink">
+            <span class="clink-icon">✉</span>
+            <span class="mono">arthurbini15@email.com</span>
+          </a>
+          <a href="#" class="clink">
+            <span class="clink-icon">◈</span>
+            <span class="mono">github.com/https://github.com/arthurbini15-png</span>
+          </a>
+          <a href="#" class="clink">
+            <span class="clink-icon">▸</span>
+            <span class="mono">linkedin.com/https://www.linkedin.com/feed/</span>
+          </a>
+        </div>
+        <div class="contact-status">
+          <span class="status-dot pulse"></span>
+          <span class="mono">DISPONIBLE POUR FREELANCE</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label class="form-label mono">// NOM</label>
+          <input type="text" class="form-input" placeholder="Votre nom..." />
+        </div>
+        <div class="form-group">
+          <label class="form-label mono">// EMAIL</label>
+          <input type="email" class="form-input" placeholder="votre@email.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label mono">// MESSAGE</label>
+          <textarea class="form-input form-textarea" placeholder="Décrivez votre projet..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          <span>ENVOYER_MESSAGE</span>
+          <span class="btn-icon">▶</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section id="cv">
+   
+    <div class="cadre-style">
+       <h2>ARTHUR_BINI</h2>
+       <img src="ma-photo.jpg" alt="BINI" width="110" height="200">
+
+        <h3>👤 Informations</h3>
+        <p><strong>Email :</strong> arthurbini15mail@gmail.com</p><br>
+        <p><strong>Téléphone :</strong> +225 01 73 70 10 66</p>
+        <p>je suis ivoirien resident a Abidjan plus precisement dans la Commune de Cocody.</p>
+        <p>Depuis tout petit j'adore la technologies et les ordinateurs. j'ai eu mon Cepe en 2018 j'ai eu mon Brevet en 2023 et fait le Baccalaureat D   </p>
+
+        <h3>🎓 Formation</h3>
+        <p></p>
+        <p>Licence 1 Informatique</p>
+        <p>Depanneur Electronique</p>
+        <p>Main d'oeuvre tout Terrain </p><br>
+
+        <h3>💻 Compétences</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Design</li>
+            <li>JavaScript</li>
+        </ul><br>
+
+        <h3>📁 Projets</h3>
+        <ul>
+            <li>Création d’un site web personnel</li>
+            <li>Création d’un portfolio</li>
+            <li>Etre un grand DEVOPS</li>
+        </ul><br>
+
+        <h3>🌍 Langues</h3>
+        <ul>
+            <li>Français</li>
+            <li>Anglais (projects)</li>
+        </ul>
+
+    </div>
+    <div>
+      <button class="btn-download">Télécharger mon CV</button>
+    </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <span class="mono">© 2025 ARTHUR_BINI // TOUS DROITS RÉSERVÉS</span>
+      <span class="mono">FAIT AVEC ⚡ ET ☕</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
